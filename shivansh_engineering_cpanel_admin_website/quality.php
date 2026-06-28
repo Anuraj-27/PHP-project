@@ -1,0 +1,1 @@
+<?php require 'includes.php'; $d=content_data(); header_html('Quality'); ?><section class="page-title"><div class="container"><h1>Quality</h1></div></section><section class="section"><div class="container"><div class="cards"><?php foreach($d['quality'] as $q): ?><div class="card"><h3><?=h($q)?></h3></div><?php endforeach; ?></div></div></section><?php footer_html(); ?>

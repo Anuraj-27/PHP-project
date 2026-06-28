@@ -1,0 +1,30 @@
+{
+  "site": {
+    "company": "SHIVANSH ENGINEERING",
+    "tagline": "ENGINEERING SOLUTIONS FOR STEEL PROCESSING INDUSTRY",
+    "email": "sunil.kokate@gmail.com",
+    "phone": "+91 00000 00000",
+    "whatsapp": "910000000000",
+    "address": "Pune, Maharashtra, India",
+    "hero_title": "Precision Engineering for Steel Processing Lines",
+    "hero_text": "ISO certified manufacturer of steel processing equipment, heavy fabrication, precision machining and turnkey machine building solutions.",
+    "about": "Shivansh Engineering manufactures custom-engineered equipment for steel processing plants and coil service centres. With ISO certified facilities, skilled manpower and 60+ completed projects, we deliver reliable machinery for Indian and international customers.",
+    "projects_count": "60+",
+    "facility_area": "17,000 sq.ft.",
+    "employees": "22+"
+  },
+  "products": [
+    {"name":"Slitting Lines","text":"Heavy duty slitting lines for HR/CR steel coils with reliable performance."},
+    {"name":"Cut-to-Length Lines","text":"CTL lines for accurate levelling, shearing and stacking."},
+    {"name":"Recoilers & Uncoilers","text":"Robust coil handling systems for demanding production environments."},
+    {"name":"Coil Handling Equipment","text":"Coil cars, mandrels, snubbers and auxiliary equipment."},
+    {"name":"Levellers & Pinch Rolls","text":"Precision engineered levelling and feeding equipment."},
+    {"name":"Custom Steel Plant Equipment","text":"Tailor-made assemblies, rolls, shafts and machine components."}
+  ],
+  "projects": [
+    {"name":"Steel Processing Line Project","location":"India","text":"Design, manufacturing and commissioning support."},
+    {"name":"Export Equipment Supply","location":"Russia / Kenya","text":"Manufacturing and supply of engineered steel processing equipment."}
+  ],
+  "gallery": ["hero-steel-line.jpg", "factory.jpg", "slitting-lines.jpg", "cut-to-length-lines.jpg"],
+  "quality": ["ISO certified manufacturing", "In-house design and engineering", "Precision machining and inspection", "Documented quality control", "On-time delivery focus", "After-sales support"]
+}

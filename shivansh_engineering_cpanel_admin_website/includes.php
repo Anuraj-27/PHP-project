@@ -1,0 +1,9 @@
+<?php
+function content_data(){ $f=__DIR__.'/data/content.json'; return json_decode(file_get_contents($f), true); }
+function h($s){ return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
+function header_html($title=''){ $d=content_data(); $s=$d['site']; ?>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title><?=h($title ?: $s['company'])?></title><link rel="stylesheet" href="assets/css/style.css"><style>.admin-note{background:#102a43;color:white;padding:10px 18px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}.card{background:#fff;border-radius:12px;padding:22px;box-shadow:0 8px 25px rgba(0,0,0,.08)}.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.gallery-grid img{width:100%;height:180px;object-fit:cover;border-radius:10px}.hero{background:linear-gradient(90deg,rgba(8,31,61,.86),rgba(8,31,61,.55)),url('assets/images/hero-steel-line.jpg') center/cover;}</style></head><body>
+<header class="topbar"><div class="container nav"><a class="brand" href="index.php"><img src="assets/images/shivansh-logo-card.png" alt="Logo"><span><?=h($s['company'])?></span></a><nav><a href="index.php">Home</a><a href="about.php">About</a><a href="products.php">Products</a><a href="facilities.php">Facilities</a><a href="projects.php">Projects</a><a href="quality.php">Quality</a><a href="gallery.php">Gallery</a><a href="contact.php">Contact</a><a href="admin/login.php">Admin</a></nav></div></header>
+<?php }
+function footer_html(){ $d=content_data(); $s=$d['site']; ?><footer class="footer"><div class="container"><h3><?=h($s['company'])?></h3><p><?=h($s['tagline'])?></p><p>Email: <?=h($s['email'])?> | Phone: <?=h($s['phone'])?></p><p>© <?=date('Y')?> <?=h($s['company'])?>. All rights reserved.</p></div></footer><script src="assets/js/script.js"></script></body></html><?php }
+?>
